@@ -98,9 +98,8 @@ def getEmptyNumberList(maxNum, tau):
 
     return nList
 
-
 # Returns a list of all values up to sqrt(num) that divide num evenly.
-def getFactors(num):
+def getDivisors(num):
     factors = []
     for i in range(2, math.floor(num ** 0.5) + 1):
         if num % i == 0:
@@ -153,25 +152,16 @@ def isCongruent(numbers):
 def doCount(tau, maxNum):
     # For each number in the range:
     for number in range(2, maxNum):
-
-        # Add a representative Number object to the master list:
-
-        # Reset the current list of factors:doCount(tau, maxNum)
-        ourFactors = []
-
-        # Reset the list of factorizations:
-        ourFactorizations = []
-
         # Get the simple list of factors:
-        ourFactors = getFactors(number)
+        ourFactors = getDivisors(number)
 
         # Generate completed factorizations for each factor in the list, if possible,
         # and add to the list of completed factorizations:
-        ourFactorizations = factorize(ourFactors, number, tau)
+        factorizationList = factorize(ourFactors, number, tau)
 
         # If there are any successful factorizations, add them to the Number object:
-        if len(ourFactorizations) > 0:
-            for f in ourFactorizations:
+        if len(factorizationList) > 0:
+            for f in factorizationList:
                 numberList[number].addFactorization(Factorization(f))
 
 
