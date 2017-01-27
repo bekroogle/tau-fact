@@ -2,6 +2,10 @@ import math
 from collections_extended import bag
 
 
+# a Factorization object contains:
+#   a list of factors: factorList[], where factorList[m] ≡ factorList[n] (mod  τ),
+#   a function returning the value of the first factor (mod  τ).
+#   a function returning the length of the factor list.
 class Factorization:
     def __init__(self, factorList):
         self.factorList = factorList
@@ -18,8 +22,8 @@ class Factorization:
 
 
 # Number object contains a list of all the τ-factorizations for that number.
-# method isAtom():bool returns True if number has no τ-factorizations.
-# method getModValue(τ) returns the number's value (mod τ).
+# method isAtom(): bool returns True if number has no τ-factorizations.
+# method get_mod_value(τ): int returns the number's value (mod τ).
 class Number:
     def __init__(self, name):
         self.name = name
@@ -29,7 +33,7 @@ class Number:
         self.maxFactor = Factorization([])
         self.minFactor = Factorization([])
 
-    def addFactorization(self, factorization):
+    def add_factorization(self, factorization):
         for f in self.factorizations:
             if bag(f.factorList) == bag(factorization.factorList):
                 return
@@ -47,34 +51,34 @@ class Number:
 
     # identifies the longest factorization and returns its length.
     # WARNING: This mutates the attribute: self.maxFactor!
-    def calculateKmax(self):
+    def get_longest_fact(self):
         return self.maxFactor.getLength()
     # identifies the shortest factorization and returns its length.
     # WARNING: This mutates the attribute: self.minFactor!
-    def calculateKmin(self):
+    def get_shortest_fact(self):
         return self.minFactor.getLength()
 
-    def getElasticity(self):
-        if self.isAtom() == False:
-            return self.calculateKmax() / self.calculateKmin()
+    def get_elasticity(self):
+        if not self.is_atom():
+            return self.get_longest_fact() / self.get_shortest_fact()
 
-    def isAtom(self):
+    def is_atom(self):
         return bool(len(self.factorizations) < 1)
 
-    def setModValue(self, τ):
+    def set_mod_value(self, τ):
         self.modValue = self.name % τ
 
-    def getModValue(self):
+    def get_mod_value(self):
         return self.modValue
 
     def __str__(self):
         outString = "{:>5} ".format(str(self.name) + ':')
         outString += ' τ{:<2}= {:<5}'.format(tau, str(self.modValue))
 
-        hasFactorsIndicatorString = "Atom" if self.isAtom() else "===>"
+        hasFactorsIndicatorString = "Atom" if self.is_atom() else "===>"
         outString += '{:>5}  '.format(hasFactorsIndicatorString)
 
-        if self.isAtom() == False:
+        if self.is_atom() == False:
             for f in self.factorizations:
                 outString += str(f)
                 if f != self.factorizations[-1]:
@@ -83,23 +87,24 @@ class Number:
         return outString
 
 
-def getUserValues():
+def get_user_values():
     tau = int(input("Enter the τ-divisor: "))
     maxN = int(input("Enter the upper limit: "))
     return tau, maxN
 
 
-def getEmptyNumberList(maxNum, tau):
+def get_empty_number_list(maxNum, tau):
     nList = []
 
     for i in range(0, maxNum):
         nList.append(Number(i))
-        nList[i].setModValue(tau)
+        nList[i].set_mod_value(tau)
 
     return nList
 
+
 # Returns a list of all values up to sqrt(num) that divide num evenly.
-def getDivisors(num):
+def get_divisors(num):
     factors = []
     for i in range(2, math.floor(num ** 0.5) + 1):
         if num % i == 0:
@@ -107,16 +112,17 @@ def getDivisors(num):
     return factors
 
 
-def subFactor(factor, length):
+def sub_factor(factor, length):
     # if factor is an atom, return it,
     # otherwise, return a list of its decomposition:
-    if numberList[factor].isAtom():
+    if numberList[factor].is_atom():
         return [factor]
     else:
         if length == "short":
             return numberList[factor].minFactor.factorList
         elif length == "long":
             return numberList[factor].maxFactor.factorList
+
 
 # Given the list of all of a numbers factors up to sqrt(num), finds
 # the complement to each factor. If the factor ≡ complement (mod τ-number),
@@ -130,17 +136,18 @@ def factorize(factors, num, tau):
         rem = factor % tau
         comp = int(num / factor)
 
+        # Recursively search shortest factorizations and longest factorizations:
         for l in lengths:
-            lhs = subFactor(factor, l)
-            rhs = subFactor(comp, l)
+            lhs = sub_factor(factor, l)
+            rhs = sub_factor(comp, l)
 
-            if isCongruent(lhs + rhs):
+            if is_congruent(lhs + rhs):
                 factorizations.append(lhs + rhs)
 
     return factorizations
 
 
-def isCongruent(numbers):
+def is_congruent(numbers):
     remainder = numbers[0] % tau
     for number in numbers:
         if number % tau != remainder:
@@ -148,32 +155,34 @@ def isCongruent(numbers):
     return True
 
 
+# Factors a single number, adding its factorization to the number list.
+def factor(number):
+    # Get the simple list of factors:
+    factors = get_divisors(number)
+
+    # Generate completed factorizations for each factor in the list, if possible,
+    # and add to the list of completed factorizations:
+    factorizationList = factorize(factors, number, tau)
+
+    # If there are any successful factorizations, add them to the Number object:
+    if len(factorizationList) > 0:
+        for factorization in factorizationList:
+            numberList[number].add_factorization(Factorization(factorization))
+
+
 # Runs the program for numbers in range(2:maxNum)
-def doCount(tau, maxNum):
+def do_batch_factor(tau, maxNum):
     # For each number in the range:
     for number in range(2, maxNum):
-        # Get the simple list of factors:
-        ourFactors = getDivisors(number)
-
-        # Generate completed factorizations for each factor in the list, if possible,
-        # and add to the list of completed factorizations:
-        factorizationList = factorize(ourFactors, number, tau)
-
-        # If there are any successful factorizations, add them to the Number object:
-        if len(factorizationList) > 0:
-            for f in factorizationList:
-                numberList[number].addFactorization(Factorization(f))
+        factor(number)
 
 
-                # Print the results to the screen:
-
-
-def showResults():
+def show_results():
     for n in numberList:
         print(n)
 
 
-def getKmax():
+def get_longest_factorization():
     k_max = 0
     owner = 0
     for n in numberList:
@@ -184,8 +193,8 @@ def getKmax():
     return owner, k_max
 
 
-def getKmin():
-    owner, k_min = getKmax()
+def get_shortest_factorization():
+    owner, k_min = get_longest_factorization()
     for n in numberList:
         for f in n.factorizations:
             if f.getLength() < k_min:
@@ -194,12 +203,12 @@ def getKmin():
     return owner, k_min
 
 
-def showElasticities():
+def show_elasticities():
     for n in numberList:
-        print("{:>5}: e = {}".format(n.name, n.getElasticity()))
+        print("{:>5}: e = {}".format(n.name, n.get_elasticity()))
 
 
-def displayMenu():
+def display_menu():
     print("\nτ-factorization Toolkit:")
     print("========================")
     print("         MENU           ")
@@ -211,49 +220,61 @@ def displayMenu():
     print("{:>4} Show k_min".format('XXX'))
     print("{:>4} Show elasticities".format('(5)'))
     print("{:>4} Show max elacsticity".format('(6)'))
+    print("{:>4} Enter REPL".format('(7)'))
     print("{:>4} Quit".format('(q)'))
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
     print("\n>", end='')
 
 
-def doNewJob():
-    tau, maxNum = getUserValues()
-    numberList = getEmptyNumberList(maxNum, tau)
-    doCount(tau, maxNum)
+def do_new_job():
+    tau, maxNum = get_user_values()
+    numberList = get_empty_number_list(maxNum, tau)
+    do_batch_factor(tau, maxNum)
     return numberList
 
+tau, maxNum = get_user_values()
+maxNum = maxNum + 1     # To make ranges inclusive
 
-tau, maxNum = getUserValues()
-numberList = getEmptyNumberList(maxNum, tau)
-doCount(tau, maxNum)
+numberList = get_empty_number_list(maxNum, tau)
+do_batch_factor(tau, maxNum)
 
-displayMenu()
+display_menu()
+
+#Let users access REPL
+def repl():
+    while True:
+        print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
+        command = input(">>>")
+        if command == 'quit': break
+        eval(command)
 
 userChoice = input()
 while userChoice != 'q' and userChoice != 'Q':
     if userChoice == '1':
-        doNewJob()
+        do_new_job()
     elif userChoice == '2':
-        showResults()
+        show_results()
     elif userChoice == '3':
-        owner, k_max = getKmax()
+        owner, k_max = get_longest_factorization()
         print("{} has k_max of {}".format(owner, k_max))
     elif userChoice == '4':
-        ower, k_min = getKmin()
+        ower, k_min = get_shortest_factorization()
         print("{} has k_min of {}".format(owner, k_min))
     elif userChoice == '5':
-        showElasticities()
+        show_elasticities()
     elif userChoice == '6':
         owner = 0
         maxE = 0
         for n in numberList:
-            nElast = n.getElasticity()
+            nElast = n.get_elasticity()
             if type(nElast) == float:
                 if nElast > maxE:
                     maxE = nElast
                     owner = n.name
 
         print("{} has e = {}".format(str(owner), maxE))
-    displayMenu()
+    elif userChoice == '7':
+        repl()
+    display_menu()
     userChoice = input()
