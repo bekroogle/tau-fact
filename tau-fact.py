@@ -105,46 +105,43 @@ def get_empty_number_list(maxNum, tau):
 
 # Returns a list of all values up to sqrt(num) that divide num evenly.
 def get_divisors(num):
-    factors = []
-    for i in range(2, math.floor(num ** 0.5) + 1):
+    divisors = []
+    for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
-            factors.append(i)
-    return factors
-
-
-def sub_factor(factor, length):
-    # if factor is an atom, return it,
-    # otherwise, return a list of its decomposition:
-    if numberList[factor].is_atom():
-        return [factor]
-    else:
-        if length == "short":
-            return numberList[factor].minFactor.factorList
-        elif length == "long":
-            return numberList[factor].maxFactor.factorList
+            divisors.append(i)
+    return divisors
 
 
 # Given the list of all of a numbers factors up to sqrt(num), finds
 # the complement to each factor. If the factor ≡ complement (mod τ-number),
 # the pair are counted as a factorization, otherwise, no factorization is
 # added to the list of factorizations.
-def factorize(factors, num, tau):
+def factorize(divisors, num, tau):
     factorizations = []
-    currentFactorization = []
-    lengths = ["short", "long"]
-    for factor in factors:
-        rem = factor % tau
-        comp = int(num / factor)
+    for divisor in divisors:
+        rem = divisor % tau
+        alt_rem = (-1 * divisor) % tau
+        comp = int(num / divisor)
 
-        # Recursively search shortest factorizations and longest factorizations:
-        for l in lengths:
-            lhs = sub_factor(factor, l)
-            rhs = sub_factor(comp, l)
+        if numberList[comp].is_atom():
+            if comp % tau == rem:
+                factorizations.append([divisor] + [comp])
+            if (-1 * comp) % tau == rem:
+                factorizations.append([divisor] + [-1 * comp])
+            if comp % tau == alt_rem:
+                factorizations.append([-1 * divisor] + [comp])
+            if (-1 * comp) % tau == alt_rem:
+                factorizations.append([-1 * divisor] + [-1 * comp])
+        else:
+            fzs = numberList[comp].factorizations
 
-            if is_congruent(lhs + rhs):
-                factorizations.append(lhs + rhs)
-
+            for fz in fzs:
+                if fz.getTauValue() == rem:
+                    factorizations.append([divisor] + fz.factorList)
+                if fz.getTauValue() == alt_rem:
+                    factorizations.append([-1*divisor] + fz.factorList)
     return factorizations
+
 
 
 def is_congruent(numbers):
@@ -158,16 +155,17 @@ def is_congruent(numbers):
 # Factors a single number, adding its factorization to the number list.
 def factor(number):
     # Get the simple list of factors:
-    factors = get_divisors(number)
+    divisors = get_divisors(number)
 
-    # Generate completed factorizations for each factor in the list, if possible,
-    # and add to the list of completed factorizations:
-    factorizationList = factorize(factors, number, tau)
+    if len(divisors) > 0:
+        # Generate completed factorizations for each factor in the list, if possible,
+        # and add to the list of completed factorizations:
+        factorizationList = factorize(divisors, number, tau)
 
     # If there are any successful factorizations, add them to the Number object:
-    if len(factorizationList) > 0:
-        for factorization in factorizationList:
-            numberList[number].add_factorization(Factorization(factorization))
+        if len(factorizationList) > 0:
+            for factorization in factorizationList:
+                numberList[number].add_factorization(Factorization(factorization))
 
 
 # Runs the program for numbers in range(2:maxNum)
@@ -243,9 +241,9 @@ display_menu()
 
 #Let users access REPL
 def repl():
+    print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
     while True:
-        print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
-        command = input(">>>")
+        command = input("#>")
         if command == 'quit': break
         eval(command)
 
