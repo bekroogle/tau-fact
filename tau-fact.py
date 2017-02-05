@@ -113,45 +113,43 @@ def get_divisors(num):
             divisors.append(i)
     return divisors
 
+# Returns all possible representations of the number provided...
+# If the number is an atom, this will be num and λ*num, where λ = 1 or -1
+# Otherwise, it returns all factorizations of num.
+def get_representations_of(num: int, n, tau):
+    if numberList[num].is_atom():
+        return [[num],[-1*num]]
+    else:
+        returnVal = []
+        for fz in numberList[num].factorizations:
+            returnVal.append(fz.factorList)
+        return returnVal
 
-# Given the list of all of a numbers factors up to sqrt(num), finds
-# the complement to each factor. If the factor ≡ complement (mod τ-number),
-# the pair are counted as a factorization, otherwise, no factorization is
-# added to the list of factorizations.
+def get_tau_val(item, tau):
+    if type(item) == int:
+        return item % tau
+    else:
+        return item[0] % tau
+
+# For all divisors of num up to sqrt(num), creates a factorizations
+# comprising each possible representation of the divisor, d (if d is an atom:
+# d, -d; otherwise it's all atomic factorizations of d) and each representation
+# of the quotient, in all possible combinations.
+# Each congruent factorization is added to the list to be returned; the
+# rest are discarded.
 def factorize(divisors, num, tau):
     factorizations = []
     for divisor in divisors:
-        rem = divisor % tau
-        alt_rem = (-1 * divisor) % tau
-        comp = int(num / divisor)
-
-        if numberList[comp].is_atom():
-            if comp % tau == rem:
-                factorizations.append([divisor] + [comp])
-            if (-1 * comp) % tau == rem:
-                factorizations.append([divisor] + [-1 * comp])
-            if comp % tau == alt_rem:
-                factorizations.append([-1 * divisor] + [comp])
-            if (-1 * comp) % tau == alt_rem:
-                factorizations.append([-1 * divisor] + [-1 * comp])
-        else:
-            fzs = numberList[comp].factorizations
-
-            for fz in fzs:
-                if fz.getTauValue() == rem:
-                    factorizations.append([divisor] + fz.factorList)
-                if fz.getTauValue() == alt_rem:
-                    factorizations.append([-1*divisor] + fz.factorList)
+        quotient = int(num / divisor)
+        for divisorRep in get_representations_of(divisor, num, tau):
+            for quotientRep in get_representations_of(quotient, num, tau):
+                if is_congruent(divisorRep, quotientRep):
+                    factorizations.append(divisorRep + quotientRep)
     return factorizations
 
 
-
-def is_congruent(numbers):
-    remainder = numbers[0] % tau
-    for number in numbers:
-        if number % tau != remainder:
-            return False
-    return True
+def is_congruent(lhs, rhs):
+    return get_tau_val(lhs, tau) == get_tau_val(rhs, tau)
 
 
 # Factors a single number, adding its factorization to the number list.
@@ -162,11 +160,11 @@ def factor(number):
     if len(divisors) > 0:
         # Generate completed factorizations for each factor in the list, if possible,
         # and add to the list of completed factorizations:
-        factorizationList = factorize(divisors, number, tau)
+        numFactorizationList = factorize(divisors, number, tau)
 
     # If there are any successful factorizations, add them to the Number object:
-        if len(factorizationList) > 0:
-            for factorization in factorizationList:
+        if len(numFactorizationList) > 0:
+            for factorization in numFactorizationList:
                 numberList[number].add_factorization(Factorization(factorization))
 
 
