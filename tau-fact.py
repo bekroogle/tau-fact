@@ -61,6 +61,8 @@ class Number:
     def get_elasticity(self):
         if not self.is_atom():
             return self.get_longest_fact() / self.get_shortest_fact()
+        else:
+            return 0
 
     def is_atom(self):
         return bool(len(self.factorizations) < 1)
@@ -202,9 +204,11 @@ def get_shortest_factorization():
 
 
 def show_elasticities():
+    eList = []
     for n in numberList:
-        print("{:>5}: e = {}".format(n.name, n.get_elasticity()))
-
+        eList.append(n.get_elasticity())
+        # print("{:>5}: e = {}".format(n.name, n.get_elasticity()))
+    print(eList)
 
 def display_menu():
     print("\nτ-factorization Toolkit:")
