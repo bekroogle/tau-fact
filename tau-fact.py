@@ -1,4 +1,7 @@
+import json
 import math
+
+import sys
 from collections_extended import bag
 
 
@@ -220,7 +223,7 @@ def display_menu():
     print("{:>4} Show k_min".format('XXX'))
     print("{:>4} Show elasticities".format('(5)'))
     print("{:>4} Show max elacsticity".format('(6)'))
-    print("{:>4} Enter REPL".format('(7)'))
+    print("{:>4} JSONify".format('(7)'))
     print("{:>4} Quit".format('(q)'))
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
@@ -242,27 +245,48 @@ do_batch_factor(tau, maxNum)
 display_menu()
 
 #Let users access REPL
-def repl():
-    print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
-    while True:
-        command = input("#>")
-        if command == 'quit': break
-        eval(command)
+def build_json():
+    json_rep = []
+    for n in numberList:
+        thisNumber = {}
+        thisNumber['name'] = n.name
+        factz = [fz.factorList for fz in n.factorizations] if len(n.factorizations) > 0 else None
+        if factz != None:
+            thisNumber['factz'] = factz
+
+        json_rep.append(thisNumber)
+    # print(json_rep)
+    return json_rep
+
+
+# print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
 
 userChoice = input()
 while userChoice != 'q' and userChoice != 'Q':
+
+    # Do new job
     if userChoice == '1':
         do_new_job()
+
+    # Show results
     elif userChoice == '2':
         show_results()
+
+    # Show ||longest factorization||
     elif userChoice == '3':
         owner, k_max = get_longest_factorization()
         print("{} has k_max of {}".format(owner, k_max))
+
+    # Show ||shortest factorization||
     elif userChoice == '4':
         ower, k_min = get_shortest_factorization()
         print("{} has k_min of {}".format(owner, k_min))
+
+    # Show ε
     elif userChoice == '5':
         show_elasticities()
+
+    # Show max ε
     elif userChoice == '6':
         owner = 0
         maxE = 0
@@ -274,7 +298,9 @@ while userChoice != 'q' and userChoice != 'Q':
                     owner = n.name
 
         print("{} has e = {}".format(str(owner), maxE))
+
+    # Get json
     elif userChoice == '7':
-        repl()
+        print(json.dumps(build_json(), sort_keys = True, indent=4))
     display_menu()
     userChoice = input()
