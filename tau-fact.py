@@ -120,14 +120,18 @@ def get_divisors(num):
 # If the number is an atom, this will be num and λ*num, where λ = 1 or -1
 # Otherwise, it returns all factorizations of num.
 def get_representations_of(num: int, n, tau):
+    # If it's an atom, return atom * +/- unit:
     if numberList[num].is_atom():
         return [[num],[-1*num]]
+    # Otherwise, return all factorizations:
     else:
         returnVal = []
         for fz in numberList[num].factorizations:
             returnVal.append(fz.factorList)
         return returnVal
 
+
+# Return the value of a number or congruent list (mod tau):
 def get_tau_val(item, tau):
     if type(item) == int:
         return item % tau
