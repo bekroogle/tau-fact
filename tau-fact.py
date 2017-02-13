@@ -146,12 +146,13 @@ def get_tau_val(item, tau):
 # rest are discarded.
 def factorize(divisors, num, tau):
     factorizations = []
+    non_atomic_fz = []
     for divisor in divisors:
         quotient = int(num / divisor)
-        for divisorRep in get_representations_of(divisor, num, tau):
-            for quotientRep in get_representations_of(quotient, num, tau):
-                if is_congruent(divisorRep, quotientRep):
-                    factorizations.append(divisorRep + quotientRep)
+        for divisor_rep in get_representations_of(divisor, num, tau):
+            for quotient_rep in get_representations_of(quotient, num, tau):
+                if is_congruent(divisor_rep, quotient_rep):
+                    factorizations.append(divisor_rep + quotient_rep)
     return factorizations
 
 
@@ -167,11 +168,11 @@ def factor(number):
     if len(divisors) > 0:
         # Generate completed factorizations for each factor in the list, if possible,
         # and add to the list of completed factorizations:
-        numFactorizationList = factorize(divisors, number, tau)
+        num_factorization_list = factorize(divisors, number, tau)
 
     # If there are any successful factorizations, add them to the Number object:
-        if len(numFactorizationList) > 0:
-            for factorization in numFactorizationList:
+        if len(num_factorization_list) > 0:
+            for factorization in num_factorization_list:
                 numberList[number].add_factorization(Factorization(factorization))
 
 
@@ -220,8 +221,7 @@ def display_menu():
     print("========================")
     print("         MENU           ")
     print("========================")
-    # print("{:>4} XXXXX BROKEN XXXXX".format('(1)'))
-    print("{:>4} Begin new job.".format('XXX'))
+    print("{:>4} Begin new job.".format('(1)'))
     print("{:>4} Show resulting list of factorizations.".format('(2)'))
     print("{:>4} Show k_max".format('(3)'))
     print("{:>4} Show k_min".format('XXX'))
@@ -232,13 +232,6 @@ def display_menu():
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
     print("\n>", end='')
-
-
-def do_new_job():
-    tau, maxNum = get_user_values()
-    numberList = get_empty_number_list(maxNum, tau)
-    do_batch_factor(tau, maxNum)
-    return numberList
 
 tau, maxNum = get_user_values()
 maxNum = maxNum + 1     # To make ranges inclusive
@@ -270,7 +263,12 @@ while userChoice != 'q' and userChoice != 'Q':
 
     # Do new job
     if userChoice == '1':
-        do_new_job()
+        del numberList
+        tau, maxNum = get_user_values()
+        maxNum += 1
+        numberList = get_empty_number_list(maxNum, tau)
+        do_batch_factor(tau, maxNum)
+
 
     # Show results
     elif userChoice == '2':
