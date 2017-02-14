@@ -1,8 +1,5 @@
 import json
 
-from collections_extended import bag
-
-
 # a Factorization object contains:
 #   a list of factors: factorList[], where factorList[m] ≡ factorList[n] (mod  τ),
 #   a function returning the value of the first factor (mod  τ).
@@ -36,7 +33,7 @@ class Number:
 
     def add_factorization(self, factorization):
         for f in self.factorizations:
-            if bag(f.factorList) == bag(factorization.factorList):
+            if sort(f.factorList) == sort(factorization.factorList):
                 return
 
         # Update the maxFactor if the new factorization is longer than previous max.
