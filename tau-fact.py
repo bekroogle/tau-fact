@@ -228,6 +228,7 @@ def display_menu():
     print("{:>4} Show max elacsticity".format('(6)'))
     print("{:>4} JSONify".format('(7)'))
     print("{:>4} Write to file".format('(8)'))
+    print("{:>4} Read from file".format('(9)'))
     print("{:>4} Quit".format('(q)'))
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
@@ -262,6 +263,16 @@ def write_to_file(str):
     filename = input("Please enter file name:")
     f = open(filename, 'w')
     json.dump(str, f);
+    print("JSON written to {:<} .".format(filename))
+    f.close()
+
+def read_from_file():
+    filename = input("Please enter file name:")
+    f = open(filename, 'r')
+    from_file = json.load(f)
+    print(json.dumps(from_file, sort_keys = False, indent = 2))
+
+    f.close()
 
 numberList = None
 
@@ -304,6 +315,10 @@ while userChoice != 'q' and userChoice != 'Q':
     elif userChoice == '7':
         print(json.dumps(build_json(), sort_keys = True, indent=4))
     elif userChoice == '8':
-        write_to_file(json.dumps(build_json(), sort_keys = False))
+        write_to_file(build_json())
+    elif userChoice == '9':
+        read_from_file()
+
+
     display_menu()
     userChoice = input()
