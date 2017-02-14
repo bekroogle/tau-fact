@@ -1,7 +1,5 @@
 import json
-import math
 
-import sys
 from collections_extended import bag
 
 
@@ -216,6 +214,7 @@ def show_elasticities():
         # print("{:>5}: e = {}".format(n.name, n.get_elasticity()))
     print(eList)
 
+
 def display_menu():
     print("\nτ-factorization Toolkit:")
     print("========================")
@@ -228,16 +227,17 @@ def display_menu():
     print("{:>4} Show elasticities".format('(5)'))
     print("{:>4} Show max elacsticity".format('(6)'))
     print("{:>4} JSONify".format('(7)'))
+    print("{:>4} Write to file".format('(8)'))
     print("{:>4} Quit".format('(q)'))
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
     print("\n>", end='')
 
-tau, maxNum = get_user_values()
-maxNum = maxNum + 1     # To make ranges inclusive
-
-numberList = get_empty_number_list(maxNum, tau)
-do_batch_factor(tau, maxNum)
+# tau, maxNum = get_user_values()
+# maxNum = maxNum + 1     # To make ranges inclusive
+#
+ # numberList = get_empty_number_list(maxNum, tau)
+# do_batch_factor(tau, maxNum)
 
 display_menu()
 
@@ -258,6 +258,13 @@ def build_json():
 
 # print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
 
+def write_to_file(str):
+    filename = input("Please enter file name:")
+    f = open(filename, 'w')
+    json.dump(str, f);
+
+numberList = None
+
 userChoice = input()
 while userChoice != 'q' and userChoice != 'Q':
 
@@ -268,26 +275,20 @@ while userChoice != 'q' and userChoice != 'Q':
         maxNum += 1
         numberList = get_empty_number_list(maxNum, tau)
         do_batch_factor(tau, maxNum)
-
-
     # Show results
     elif userChoice == '2':
         show_results()
-
     # Show ||longest factorization||
     elif userChoice == '3':
         owner, k_max = get_longest_factorization()
         print("{} has k_max of {}".format(owner, k_max))
-
     # Show ||shortest factorization||
     elif userChoice == '4':
         ower, k_min = get_shortest_factorization()
         print("{} has k_min of {}".format(owner, k_min))
-
     # Show ε
     elif userChoice == '5':
         show_elasticities()
-
     # Show max ε
     elif userChoice == '6':
         owner = 0
@@ -298,11 +299,11 @@ while userChoice != 'q' and userChoice != 'Q':
                 if nElast > maxE:
                     maxE = nElast
                     owner = n.name
-
         print("{} has e = {}".format(str(owner), maxE))
-
-    # Get json
+    #JSONify
     elif userChoice == '7':
         print(json.dumps(build_json(), sort_keys = True, indent=4))
+    elif userChoice == '8':
+        write_to_file(json.dumps(build_json(), sort_keys = False))
     display_menu()
     userChoice = input()
