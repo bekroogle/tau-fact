@@ -1,5 +1,6 @@
 import json
 
+
 # a Factorization object contains:
 #   a list of factors: factorList[], where factorList[m] ≡ factorList[n] (mod  τ),
 #   a function returning the value of the first factor (mod  τ).
@@ -33,7 +34,7 @@ class Number:
 
     def add_factorization(self, factorization):
         for f in self.factorizations:
-            if sort(f.factorList) == sort(factorization.factorList):
+            if sorted(f.factorList) == sorted(factorization.factorList):
                 return
 
         # Update the maxFactor if the new factorization is longer than previous max.
@@ -237,7 +238,6 @@ def display_menu():
  # numberList = get_empty_number_list(maxNum, tau)
 # do_batch_factor(tau, maxNum)
 
-display_menu()
 
 #Let users access REPL
 def build_json():
@@ -270,6 +270,8 @@ def read_from_file():
     print(json.dumps(from_file, sort_keys = False, indent = 2))
 
     f.close()
+
+display_menu()
 
 numberList = None
 
