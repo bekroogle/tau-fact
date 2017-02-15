@@ -73,19 +73,24 @@ class Number:
         return self.modValue
 
     def __str__(self):
-        outString = "{:>5} ".format(str(self.name) + ':')
-        outString += ' τ{:<2}= {:<5}'.format(tau, str(self.modValue))
+        # out_string = "==========================\n"
 
-        hasFactorsIndicatorString = "Atom" if self.is_atom() else "===>"
-        outString += '{:>5}  '.format(hasFactorsIndicatorString)
+        out_string = "{} ≡ {} (mod {})\t".format(str(self.name), str(self.modValue), tau)
+        out_string += "ε: {:<4}\n\n".format("NAF" if self.is_atom() else self.get_elasticity())
 
-        if self.is_atom() == False:
+        if not self.is_atom():
+            # out_string += "==========================\n"
+            out_string += "Longest Factorization:" + str(self.maxFactor.factorList) + "\n"
+            out_string += "Shortest Factorization:" + str(self.minFactor.factorList) + "\n\n"
+            # out_string += "==========================\n"
+            out_string += "Factorizations:\n"
+
             for f in self.factorizations:
-                outString += str(f)
+                out_string += str(f)
                 if f != self.factorizations[-1]:
-                    outString += ', '
+                    out_string += ', '
 
-        return outString
+        return out_string
 
 
 def get_user_values():
@@ -221,12 +226,12 @@ def display_menu():
     print("{:>4} Begin new job.".format('(1)'))
     print("{:>4} Show resulting list of factorizations.".format('(2)'))
     print("{:>4} Show k_max".format('(3)'))
-    print("{:>4} Show k_min".format('XXX'))
     print("{:>4} Show elasticities".format('(5)'))
     print("{:>4} Show max elacsticity".format('(6)'))
     print("{:>4} JSONify".format('(7)'))
-    print("{:>4} Write to file".format('(8)'))
-    print("{:>4} Read from file".format('(9)'))
+    print("{:>4} Write to file".format('(w)'))
+    print("{:>4} Read from file".format('(r)'))
+    print("{:>4} Inspect".format('(i)'))
     print("{:>4} Quit".format('(q)'))
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
@@ -304,10 +309,7 @@ while userChoice != 'q' and userChoice != 'Q':
     elif userChoice == '3':
         owner, k_max = get_longest_factorization()
         print("{} has k_max of {}".format(owner, k_max))
-    # Show ||shortest factorization||
-    elif userChoice == '4':
-        ower, k_min = get_shortest_factorization()
-        print("{} has k_min of {}".format(owner, k_min))
+    # Inspect a number
     # Show ε
     elif userChoice == '5':
         show_elasticities()
@@ -325,11 +327,14 @@ while userChoice != 'q' and userChoice != 'Q':
     #JSONify
     elif userChoice == '7':
         print(json.dumps(build_json(), sort_keys = True, indent=4))
-    elif userChoice == '8':
+    elif userChoice == 'i':
+        whichNum = input("Which number would you like to inspect? ")
+        print('\n')
+        print(numberList[int(whichNum)])
+    elif userChoice == 'w':
         write_to_file(build_json())
-    elif userChoice == '9':
+    elif userChoice == 'r':
         read_from_file()
-
 
     display_menu()
     userChoice = input()
