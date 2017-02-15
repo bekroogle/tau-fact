@@ -245,10 +245,22 @@ def build_json():
     for n in numberList:
         thisNumber = {}
         thisNumber['name'] = n.name
-        factz = [fz.factorList for fz in n.factorizations] if len(n.factorizations) > 0 else None
-        if factz != None:
+        longest = []
+        shortest = []
+        factz = []
+        if len(n.factorizations) > 0:
+            for fz in n.factorizations:
+                length = len(fz.factorList)
+                if length > len(longest):
+                    longest = fz.factorList
+                if len(shortest) == 0 or len(fz.factorList) < len(shortest):
+                    shortest = fz.factorList
+                factz.append(fz.factorList)
+        if len(factz) > 0:
             thisNumber['factz'] = factz
-
+            thisNumber['longest'] = longest
+            thisNumber['shortest'] = shortest
+            thisNumber['elasticity'] = len(longest) / len(shortest)
         json_rep.append(thisNumber)
     # print(json_rep)
     return json_rep
