@@ -17,7 +17,7 @@ class Factorization:
         return len(self.factorList)
 
     def __str__(self):
-        return '{}: |{}|'.format(str(self.factorList), str(self.getLength()))
+        return '{}:\t|{}|'.format(str(self.factorList), str(self.getLength()))
 
 
 # Number object contains a list of all the τ-factorizations for that number.
@@ -72,7 +72,7 @@ class Number:
     def get_mod_value(self):
         return self.modValue
 
-    def __str__(self):
+    def inspect(self):
         # out_string = "==========================\n"
 
         out_string = "{} ≡ {} (mod {})\t".format(str(self.name), str(self.modValue), tau)
@@ -88,9 +88,16 @@ class Number:
             for f in self.factorizations:
                 out_string += str(f)
                 if f != self.factorizations[-1]:
-                    out_string += ', '
+                    out_string += '\n'
 
         return out_string
+
+
+    def __str__(self):
+        return str(self.name) + ": ε = {}".format(str(self.get_elasticity()))
+
+def get_elastics():
+    return [n.name for n in numberList if n.get_elasticity() > 1.0]
 
 
 def get_user_values():
@@ -224,15 +231,16 @@ def display_menu():
     print("         MENU           ")
     print("========================")
     print("{:>4} Begin new job.".format('(1)'))
-    print("{:>4} Show resulting list of factorizations.".format('(2)'))
-    print("{:>4} Show k_max".format('(3)'))
-    print("{:>4} Show elasticities".format('(5)'))
-    print("{:>4} Show max elacsticity".format('(6)'))
-    print("{:>4} JSONify".format('(7)'))
-    print("{:>4} Write to file".format('(w)'))
-    print("{:>4} Read from file".format('(r)'))
-    print("{:>4} Inspect".format('(i)'))
-    print("{:>4} Quit".format('(q)'))
+    print("{:>4} Show list of factorizations.".format('(2)'))
+    print("{:>4} Show k_max.".format('(3)'))
+    print("{:>4} Show ε > 1.0.".format('(4)'))
+    print("{:>4} Show all ε.".format('(5)'))
+    print("{:>4} Show max ε.".format('(6)'))
+    print("{:>4} JSONify.".format('(7)'))
+    print("{:>4} Write to file.".format('(w)'))
+    print("{:>4} Read from file.".format('(r)'))
+    print("{:>4} Inspect a number in detail.".format('(i)'))
+    print("{:>4} Quit.".format('(q)'))
 
     print("\n (XXX indicates a feature that is not functioning properly.)")
     print("\n>", end='')
@@ -305,12 +313,14 @@ while userChoice != 'q' and userChoice != 'Q':
     # Show results
     elif userChoice == '2':
         show_results()
-    # Show ||longest factorization||
+    # Show only ε > 1.0
     elif userChoice == '3':
         owner, k_max = get_longest_factorization()
         print("{} has k_max of {}".format(owner, k_max))
-    # Inspect a number
     # Show ε
+    elif userChoice == '4':
+        for n in get_elastics():
+            print('ε({}) = {}'.format(n, numberList[n].get_elasticity()))
     elif userChoice == '5':
         show_elasticities()
     # Show max ε
@@ -324,13 +334,16 @@ while userChoice != 'q' and userChoice != 'Q':
                     maxE = nElast
                     owner = n.name
         print("{} has e = {}".format(str(owner), maxE))
-    #JSONify
+
+    # JSONify
     elif userChoice == '7':
         print(json.dumps(build_json(), sort_keys = True, indent=4))
+
+    # Inspect
     elif userChoice == 'i':
         whichNum = input("Which number would you like to inspect? ")
         print('\n')
-        print(numberList[int(whichNum)])
+        print(numberList[int(whichNum)].inspect())
     elif userChoice == 'w':
         write_to_file(build_json())
     elif userChoice == 'r':
