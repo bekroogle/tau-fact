@@ -1,5 +1,7 @@
 import json
-
+import argparse
+from timeit import default_timer as timer
+import time
 
 # a Factorization object contains:
 #   a list of factors: factorList[], where factorList[m] ≡ factorList[n] (mod  τ),
@@ -106,7 +108,7 @@ def get_user_values():
     return tau, maxN
 
 
-def get_empty_number_list(maxNum, tau):
+def get_empty_number_list(tau, maxNum):
     nList = []
 
     for i in range(0, maxNum):
@@ -186,9 +188,13 @@ def factor(number):
 
 # Runs the program for numbers in range(2:maxNum)
 def do_batch_factor(tau, maxNum):
+    start = timer()
     # For each number in the range:
     for number in range(2, maxNum):
         factor(number)
+    end = timer()
+    print("Time elapsed: {}".format(end-start))
+    write_to_file(build_json())
 
 
 def show_results():
@@ -282,7 +288,11 @@ def build_json():
 # print("Entering Python Read-Eval-Print Loop (Type 'quit' when done.)")
 
 def write_to_file(str):
-    filename = input("Please enter file name:")
+    if args.filename == "-1":
+        filename = "tau{}-max{}".format(tau,maxNum)
+        filename += time.strftime("%b%d%H%M", time.localtime())
+    else:
+        filename = args.filename
     f = open(filename, 'w')
     json.dump(str, f);
     print("JSON written to {:<} .".format(filename))
@@ -290,17 +300,31 @@ def write_to_file(str):
 
 def read_from_file():
     filename = input("Please enter file name:")
-    f = open(filename, 'r')
-    from_file = json.load(f)
-    print(json.dumps(from_file, sort_keys = False, indent = 2))
-
-    f.close()
-
-display_menu()
-
-numberList = None
-
+    with open(filename, 'r') as f:
+        from_file = json.load(f)
+        numberList = []
+        for item in from_file:
+            name = item['name']
+            numberList.append(Number(name))
+            if 'factz' in item:
+                for f in item['factz']:
+                    numberList[name].add_factorization(Factorization(f))
+        print(json.dumps(from_file, sort_keys = False, indent = 2))
+        return numberList
+#
+# parser = argparse.ArgumentParser()
+# parser.add_argument("-t", dest="tau", default="6", type=int)
+# parser.add_argument("-m", dest="maxNum", default="1000", type=int)
+# parser.add_argument("-f", dest="filename", default="-1")
+# args = parser.parse_args()
+# print("tau: {}, max: {}".format(args.tau, args.maxNum))
+# display_menu()
+# tau = args.tau
+# maxNum = args.maxNum + 1
+numberList = get_empty_number_list(tau, maxNum)
+do_batch_factor(tau, maxNum)
 userChoice = input()
+
 while userChoice != 'q' and userChoice != 'Q':
 
     # Do new job
@@ -347,7 +371,7 @@ while userChoice != 'q' and userChoice != 'Q':
     elif userChoice == 'w':
         write_to_file(build_json())
     elif userChoice == 'r':
-        read_from_file()
+        numberList = read_from_file()
 
     display_menu()
     userChoice = input()

@@ -1,0 +1,1564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0c30baf-4de0-4c22-8c3e-350dec7f20c0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tau-fact.py" afterPath="$PROJECT_DIR$/tau-fact.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="tau-fact" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="tau-fact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tau-fact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#83#117#0" expanded="true" />
+                <element signature="e#387#415#0" expanded="true" />
+                <element signature="e#452#513#0" expanded="true" />
+                <element signature="e#548#575#0" expanded="true" />
+                <element signature="e#608#678#0" expanded="true" />
+                <element signature="e#681#757#0" expanded="true" />
+                <element signature="e#949#1130#0" expanded="true" />
+                <element signature="e#1188#1863#0" expanded="true" />
+                <element signature="e#1869#1931#0" expanded="true" />
+                <element signature="e#2031#2064#0" expanded="true" />
+                <element signature="e#2069#2132#0" expanded="true" />
+                <element signature="e#2233#2266#0" expanded="true" />
+                <element signature="e#2306#2433#0" expanded="true" />
+                <element signature="e#2466#2507#0" expanded="true" />
+                <element signature="e#2549#2578#0" expanded="true" />
+                <element signature="e#2617#2637#0" expanded="true" />
+                <element signature="e#2670#3478#0" expanded="true" />
+                <element signature="e#3512#3581#0" expanded="true" />
+                <element signature="e#3607#3670#0" expanded="true" />
+                <element signature="e#3700#3811#0" expanded="true" />
+                <element signature="e#3858#3986#0" expanded="true" />
+                <element signature="e#4087#4220#0" expanded="true" />
+                <element signature="e#4222#4286#0" expanded="true" />
+                <element signature="e#4462#4769#0" expanded="true" />
+                <element signature="e#4861#4949#0" expanded="true" />
+                <element signature="e#4949#5016#0" expanded="true" />
+                <element signature="e#5357#5768#0" expanded="true" />
+                <element signature="e#5803#5856#0" expanded="true" />
+                <element signature="e#5955#6531#0" expanded="true" />
+                <element signature="e#6060#6137#0" expanded="true" />
+                <element signature="e#6619#6827#0" expanded="true" />
+                <element signature="e#6854#6891#0" expanded="true" />
+                <element signature="e#6931#7145#0" expanded="true" />
+                <element signature="e#7186#7419#0" expanded="true" />
+                <element signature="e#7451#7612#0" expanded="true" />
+                <element signature="e#7639#8421#0" expanded="true" />
+                <element signature="e#8423#8456#0" expanded="true" />
+                <element signature="e#8641#9478#0" expanded="true" />
+                <element signature="e#9583#9885#0" expanded="true" />
+                <element signature="e#9913#10395#0" expanded="true" />
+                <element signature="e#10395#10396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jupy.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jupy.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1232">
+              <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>1824</find>
+      <find>88</find>
+      <find>272</find>
+      <find>do_batch_factor</find>
+      <find>(.*): (\|[0-9]\|)</find>
+      <find>is_congru</find>
+      <find>512</find>
+      <find>repl</find>
+      <find>\+ 1</find>
+      <find>Atom</find>
+      <find>atom</find>
+      <find>get_u</find>
+      <find>9216</find>
+      <find>2.0</find>
+      <find>36</find>
+      <find>k_max</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>\2</replace>
+      <replace>$1</replace>
+      <replace>$2</replace>
+      <replace>$1\t$2</replace>
+      <replace>$1\t\t$2</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/myJupyterBook.ipynb" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+        <option value="$PROJECT_DIR$/tau-fact.py" />
+        <option value="$PROJECT_DIR$/jupy.ipynb" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="953" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Python</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tau-fact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tau-fact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/tau-factorization/main-recursive.py" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT&#10;Python" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="tau-fact" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="tau-fact" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.tau-fact">
+    <configuration default="false" name="tau-fact" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tau-fact.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main-recursive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/tau-factorization" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/tau-factorization/main-recursive.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="tau-fact" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.tau-fact" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main-recursive" />
+      <item index="2" class="java.lang.String" itemvalue="Python.scratch" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.tau-fact" />
+        <item index="1" class="java.lang.String" itemvalue="Python.scratch" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main-recursive" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0c30baf-4de0-4c22-8c3e-350dec7f20c0" name="Default" comment="" />
+      <created>1485433999982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1485433999982</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Refactor: rename.">
+      <created>1485435467997</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1485435467997</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactor, rename, add REPL">
+      <created>1485550940905</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1485550940905</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed for combinatorial factorizations with units.">
+      <created>1485602001412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485602001412</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Return elasticities as list for Jupyter output.">
+      <created>1486304712114</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1486304712114</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Now using representations of d and q for factoring.">
+      <created>1486319727300</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1486319727300</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commenting.">
+      <created>1487008283675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1487008283681</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed &quot;(1) Begin new job.&quot;">
+      <created>1487010714464</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1487010714464</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add &quot;Read from file.&quot; to menu opts.">
+      <created>1487033726997</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1487033726997</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Use sorted() instead of bag().">
+      <created>1487117182325</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1487117182325</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added more info to JSONify.">
+      <created>1487118185778</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1487118185778</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added (i)nspect to the menu.">
+      <created>1487120675482</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1487120675482</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Improvements it interaction.">
+      <created>1487122507221</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1487122507221</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="953" height="1055" extended-state="5" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25197682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3164693" sideWeight="0.51197916" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="631" y="321" width="936" height="298" />
+      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32831" sideWeight="0.5152471" order="8" side_tool="true" content_ui="tabs" x="1922" y="383" width="1914" height="312" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30704522" sideWeight="0.48802084" order="3" side_tool="false" content_ui="tabs" x="2344" y="195" width="1251" height="860" />
+      <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986821" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32831" sideWeight="0.4847529" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32999474" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3852097" sideWeight="0.48958334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781458" sideWeight="0.49635038" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor: rename." />
+    <MESSAGE value="Refactor, rename, add REPL" />
+    <MESSAGE value="Fixed for combinatorial factorizations with units." />
+    <MESSAGE value="Return elasticities as list for Jupyter output." />
+    <MESSAGE value="Now using representations of d and q for factoring." />
+    <MESSAGE value="Commenting." />
+    <MESSAGE value="Fixed &quot;(1) Begin new job.&quot;" />
+    <MESSAGE value="Add &quot;Read from file.&quot; to menu opts." />
+    <MESSAGE value="Use sorted() instead of bag()." />
+    <MESSAGE value="Added more info to JSONify." />
+    <MESSAGE value="Added (i)nspect to the menu." />
+    <MESSAGE value="Improvements it interaction." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements it interaction." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tau-fact.py</url>
+          <line>275</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tau-fact.py</url>
+          <line>301</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="28" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="numberList" language="Python" />
+        <watch expression="len(shortest)" language="Python" />
+        <watch expression="len(longest)" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2256">
+          <caret line="308" column="20" lean-forward="true" selection-start-line="308" selection-start-column="20" selection-end-line="308" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupy.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2352">
+          <caret line="276" column="17" lean-forward="true" selection-start-line="276" selection-start-column="17" selection-end-line="276" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="277" column="33" lean-forward="false" selection-start-line="277" selection-start-column="33" selection-end-line="277" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4528">
+          <caret line="283" column="67" lean-forward="false" selection-start-line="283" selection-start-column="67" selection-end-line="283" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="119" column="33" lean-forward="false" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupy.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupy.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/myJupyterBook.ipynb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupy.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/myJupyterBook.ipynb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" column="48" lean-forward="true" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="1595" column="0" lean-forward="false" selection-start-line="1595" selection-start-column="0" selection-end-line="1595" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/tau-factorization/main-recursive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.4/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="264" column="0" lean-forward="false" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/myJupyterBook.ipynb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/1659851031/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="5003" column="8" lean-forward="false" selection-start-line="5003" selection-start-column="8" selection-end-line="5003" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tau-fact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#83#117#0" expanded="true" />
+            <element signature="e#387#415#0" expanded="true" />
+            <element signature="e#452#513#0" expanded="true" />
+            <element signature="e#548#575#0" expanded="true" />
+            <element signature="e#608#678#0" expanded="true" />
+            <element signature="e#681#757#0" expanded="true" />
+            <element signature="e#949#1130#0" expanded="true" />
+            <element signature="e#1188#1863#0" expanded="true" />
+            <element signature="e#1869#1931#0" expanded="true" />
+            <element signature="e#2031#2064#0" expanded="true" />
+            <element signature="e#2069#2132#0" expanded="true" />
+            <element signature="e#2233#2266#0" expanded="true" />
+            <element signature="e#2306#2433#0" expanded="true" />
+            <element signature="e#2466#2507#0" expanded="true" />
+            <element signature="e#2549#2578#0" expanded="true" />
+            <element signature="e#2617#2637#0" expanded="true" />
+            <element signature="e#2670#3478#0" expanded="true" />
+            <element signature="e#3512#3581#0" expanded="true" />
+            <element signature="e#3607#3670#0" expanded="true" />
+            <element signature="e#3700#3811#0" expanded="true" />
+            <element signature="e#3858#3986#0" expanded="true" />
+            <element signature="e#4087#4220#0" expanded="true" />
+            <element signature="e#4222#4286#0" expanded="true" />
+            <element signature="e#4462#4769#0" expanded="true" />
+            <element signature="e#4861#4949#0" expanded="true" />
+            <element signature="e#4949#5016#0" expanded="true" />
+            <element signature="e#5357#5768#0" expanded="true" />
+            <element signature="e#5803#5856#0" expanded="true" />
+            <element signature="e#5955#6531#0" expanded="true" />
+            <element signature="e#6060#6137#0" expanded="true" />
+            <element signature="e#6619#6827#0" expanded="true" />
+            <element signature="e#6854#6891#0" expanded="true" />
+            <element signature="e#6931#7145#0" expanded="true" />
+            <element signature="e#7186#7419#0" expanded="true" />
+            <element signature="e#7451#7612#0" expanded="true" />
+            <element signature="e#7639#8421#0" expanded="true" />
+            <element signature="e#8423#8456#0" expanded="true" />
+            <element signature="e#8641#9478#0" expanded="true" />
+            <element signature="e#9583#9885#0" expanded="true" />
+            <element signature="e#9913#10395#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jupy.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

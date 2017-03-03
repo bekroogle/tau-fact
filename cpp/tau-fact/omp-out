@@ -1,0 +1,46 @@
+tau: 8, max: 10000
+Time elapsed: 0.5663522070026374
+JSON written to tau8-max10001Feb171940 .
+tau: 9, max: 10000
+Time elapsed: 0.4808312469976954
+JSON written to tau9-max10001Feb171940 .
+tau: 10, max: 10000
+Time elapsed: 0.43631065799854696
+JSON written to tau10-max10001Feb171940 .
+tau: 11, max: 10000
+Time elapsed: 0.4022002599958796
+JSON written to tau11-max10001Feb171940 .
+tau: 12, max: 10000
+Time elapsed: 0.433164393005427
+JSON written to tau12-max10001Feb171940 .
+tau: 13, max: 10000
+Time elapsed: 0.4072354110030574
+JSON written to tau13-max10001Feb171940 .
+tau: 14, max: 10000
+Time elapsed: 0.38326767499529524
+JSON written to tau14-max10001Feb171940 .
+tau: 15, max: 10000
+Time elapsed: 0.3867008880042704
+JSON written to tau15-max10001Feb171940 .
+tau: 16, max: 10000
+Time elapsed: 0.3950155950005865
+JSON written to tau16-max10001Feb171940 .
+tau: 17, max: 10000
+Time elapsed: 0.36143639600049937
+JSON written to tau17-max10001Feb171940 .
+tau: 18, max: 10000
+Time elapsed: 0.36432620500272606
+JSON written to tau18-max10001Feb171940 .
+tau: 19, max: 10000
+Time elapsed: 0.3646365219974541
+JSON written to tau19-max10001Feb171941 .
+tau: 20, max: 10000
+Time elapsed: 0.367089589999523
+JSON written to tau20-max10001Feb171941 .
+tau: 21, max: 10000
+Time elapsed: 0.3543437350017484
+JSON written to tau21-max10001Feb171941 .
+tau: 22, max: 10000
+Time elapsed: 0.3475464559960528
+JSON written to tau22-max10001Feb171941 .
+11.0583 seconds
